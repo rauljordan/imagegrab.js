@@ -7,12 +7,16 @@ node.js's request module
 
 # Usage
 
+function imgrab (url, callback)
+  - url: a url string for the desired site
+  - callback: a function to process the retrieved image URLs from the website
+
 ```
 > var imgrab = require('imagegrab');
 > imgrab('http://mysite.com', function (images) {
     console.log(images);
   })
-> ['http://mysite.com/image1.jpg', 'http://mysite.com/image2.jpg]
+> ['http://mysite.com/image1.jpg', 'http://mysite.com/image2.jpg']
 ```
 
 
@@ -25,7 +29,4 @@ npm install imagegrab
 ```
 
 
-# License
-
-MIT
-===
+# License - MIT
